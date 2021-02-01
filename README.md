@@ -1,2 +1,1 @@
-# treehouse-quotes
 # treehouse-randomQuotes

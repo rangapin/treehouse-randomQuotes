@@ -9,10 +9,12 @@
 </head>
 <body>
   <div class="container">
-    <div id="quote-box">
-    <?php include 'inc/functions.php'; ?>
-        <p class="quote"><?php echo printQuote($quotes) ?></p>
-    </div>
+      <div id="quote-box">
+		  <?php include 'inc/functions.php';
+		  $quotes =;
+		  echo printQuote($quotes);
+		  ?>
+      </div>
     <button id="loadQuote" onclick="window.location.reload(true)" >Show another quote</button>
   </div>
 </body>
