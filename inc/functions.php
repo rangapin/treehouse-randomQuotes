@@ -77,7 +77,7 @@ function printQuote($quotes) {
 	$randomQuote = getRandomQuote($quotes);
 	$newEmptyString = " ";
 	$newEmptyString .= '<p class="quote">' . $randomQuote["quote"] . '</p>';
-	$newEmptyString .= '<p class="source">' . $randomQuote["source"] . '</p>';
+	$newEmptyString .= '<p class="source">' . $randomQuote["source"];
 
 	if ($randomQuote["citation"] != " ") {
 		$newEmptyString .= '<span class="citation">' . " " . $randomQuote["citation"] . '</span>';
@@ -86,6 +86,8 @@ function printQuote($quotes) {
 	if ($randomQuote["year"] != " ") {
 		$newEmptyString .= '<span class="year">' . " " .  $randomQuote["year"] . '</span>';
 	}
+
+	$newEmptyString .= '</p>';
 
 	return $newEmptyString;
 
